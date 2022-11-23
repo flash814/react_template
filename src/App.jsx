@@ -5,6 +5,7 @@ import '../src/styles/bootstrap-reboot.min.css'
 import Header from "./components/Header";
 import Register from "./components/Register";
 import Slider from "./components/Slider";
+import Presentation from "./components/Presentation"
 
 function App() {
 
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
         <Header/>
         <Register/>
-        <Slider/>
+        <Presentation/>
+        
 
     </div>
   );
