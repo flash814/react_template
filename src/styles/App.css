@@ -37,10 +37,7 @@ li{
 a {
 	text-decoration: none;
 }
-.logo a {
-	
-	
-}
+
 .navbar ul{
 	display: flex;
 	justify-content: space-between;
