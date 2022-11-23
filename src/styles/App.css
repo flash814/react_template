@@ -538,9 +538,6 @@ progress::-webkit-progress-value{
 	display: flex;
 	margin-left: 50px;
 }
-.part__item-img{
-
-}
 .part__name{
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
