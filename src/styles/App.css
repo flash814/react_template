@@ -176,17 +176,17 @@ header{
 	padding: 0 15px;
 	margin-bottom: 1px;
 }
-li.pres__name-title::before{
+li.pres__name_title::before{
 	padding-right: 33px;
 }
-.pres__name-title::before{
+.pres__name_title::before{
 
 	content: url(../img/Ellipse.png);
 	align-items: center;
 	margin: 0;          /* 2 */
 	left: 0px;
 }
-.pres__name-title{
+.pres__name_title{
 	font-family: 'Open Sans ', sans-serif;
 	font-weight:300; 
 	font-size: 33px;
@@ -230,6 +230,9 @@ li.pres__name-title::before{
 .num__slide :active{
 	border: 1px solid;
 	border-color: #add136;
+}
+.slide__item{
+	display: none;
 }
 .slider__item-left{
 	width: 100%;

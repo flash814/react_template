@@ -1,11 +1,52 @@
+import { render } from "@testing-library/react";
 import React from "react";
 import Slider from "./Slider";
-
-
+import $ from 'jquery';
 const Presentation = function() {
-    
-
       
+    $(document).ready(function(){
+        $('#pres__title-1').on('click', function(){
+        $('#pres__title-1').toggleClass('active__button');
+        $('.pres__name_title').removeClass('active__button');
+        $('pres__title-1').addClass('active__button');
+        });
+      
+        $('#pres__title-2').on('click', function(){
+        $('#pres__title-2').toggleClass('active__button');
+        $('.pres__name_title').removeClass('active__button');
+        $('pres__title-2').addClass('active__button');
+        });
+      
+        $('#pres__title-3').on('click', function(){
+        $('#pres__title-3').toggleClass('active__button');
+        $('.pres__name_title').removeClass('active__button');
+        $('pres__title-3').addClass('active__button');
+        });
+      }
+      );
+      
+      $(document).ready(function(){
+        $('#pres__title-1').on('click', function(){
+        $('#pres__title-1').toggleClass('active__button');
+        $('.slide__item').removeClass('active');
+        $('#slide__1').addClass('active');
+        });
+      
+        $('#pres__title-2').on('click', function(){
+        $('#pres__title-2').toggleClass('active__button');
+        $('.slide__item').removeClass('active');
+        $('#slide__2').addClass('active');
+        });
+      
+        $('#pres__title-3').on('click', function(){
+        $('#pres__title-3').toggleClass('active__button');
+        $('.slide__item').removeClass('active');
+        $('#slide__3').addClass('active');
+        });
+      }
+      );
+     
+
     return (
       
 <div class="pres">
@@ -20,17 +61,16 @@ const Presentation = function() {
         <div class="pres__slider">
             <div class="pres__name">
                 <ol>
-                <li class="pres__name-title active__button" id="pres__title-1" ><button>Simple</button></li>
-                <li class="pres__name-title" id="pres__title-2"><button>Transparent</button></li>
-                <li class="pres__name-title" id="pres__title-3"><button>Collaborative</button></li>
+                <li className="pres__name_title active__button" id="pres__title-1">Simple </li>
+                <li class="pres__name_title" id="pres__title-2">Transparent</li>
+                <li class="pres__name_title" id="pres__title-3">Collaborative</li>
             </ol>
             </div>
             <Slider/>
         </div>
      </div>
     </div>
-
-        )
-};
+    );
+}
 
 export default Presentation;
