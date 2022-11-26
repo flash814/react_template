@@ -1,6 +1,7 @@
 import React from "react";
-import slide_item from "./slide_item";
+
 import glasses from '/OpenServer/domains/react_template/src/img/glasses.png'
+
 const Slider = function() {
     
         return(
@@ -14,7 +15,7 @@ const Slider = function() {
                         <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                 </div>
-                <div class="slide__item  active" id="slide__2">
+                <div class="slide__item" id="slide__2">
                     <div class="slider__item-left">
                         <div class="slider__img"><img src={glasses} alt="" srcset=""/></div>
                  </div>
@@ -23,7 +24,7 @@ const Slider = function() {
                         <div class="slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et do lore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
                     </div>
                 </div>
-                <div class="slide__item  active" id="slide__3">
+                <div class="slide__item" id="slide__3">
                     <div class="slider__item-left">
                         <div class="slider__img"><img src={glasses} alt="" srcset=""/></div>
                  </div>

@@ -1,12 +1,14 @@
 import React from "react";
 import Slider from "./Slider";
-import slide_item from "./slide_item";
+
 
 const Presentation = function() {
     
+
+      
     return (
       
-<div class="presentation">
+<div class="pres">
      <div class="container">
             <div class="pres__icon"><img src="/img/icon__up.png" alt="" srcset=""/></div>
                 <div class="pres__title"><h1>Our work is the presentation 

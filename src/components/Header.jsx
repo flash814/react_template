@@ -16,8 +16,8 @@ const Header = function() {
               <li><a href="#">find out more</a></li>
           </ul>      
       </nav>
-      <div class="header__btn">
-          <button class="login__btn btn">login</button>
+      <div class="header-btn">
+          <button class="btn">login</button>
       </div>   
   
   </header>
