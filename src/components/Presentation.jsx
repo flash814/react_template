@@ -2,6 +2,7 @@ import { render } from "@testing-library/react";
 import React from "react";
 import Slider from "./Slider";
 import $ from 'jquery';
+import icon__up from "../img/icon__up.png"
 const Presentation = function() {
       
     $(document).ready(function(){
@@ -51,7 +52,7 @@ const Presentation = function() {
       
 <div class="pres">
      <div class="container">
-            <div class="pres__icon"><img src="/img/icon__up.png" alt="" srcset=""/></div>
+            <div class="pres__icon"><img src={icon__up} alt="" srcset=""/></div>
                 <div class="pres__title"><h1>Our work is the presentation 
             of our capabilities.
             </h1></div>
