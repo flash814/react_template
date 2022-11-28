@@ -11,7 +11,7 @@ const Find = function() {
         <div className="properties">
             <div className="find__item-left">
                 <div className="find__img">
-                    <img src={sofa} alt="" srcset=""/>
+                    <img src={sofa} alt="" srcSet=""/>
                 </div>
             </div>
             <div className="find__item-right">
@@ -33,7 +33,7 @@ Your journey to becoming a real estate baron starts here.
         <div className="buyers">
             <div className="find__item-left">
                 <div className="find__img">
-                    <img src={wallet} alt="" srcset=""/>
+                    <img src={wallet} alt="" srcSet=""/>
                 </div>
             </div>
             <div className="find__item-right">

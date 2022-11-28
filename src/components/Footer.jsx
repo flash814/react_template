@@ -6,7 +6,7 @@ const Footer = function() {
     return (
         <footer>
             <div className="footer__companies">
-                <div className="companies"><img src={companies} alt="" srcset=""/></div>
+                <div className="companies"><img src={companies} alt="" srcSet=""/></div>
             </div>
             <div className="copyright">Copyright © 2001 - 2014  Cssauthor.com</div>
         </footer>

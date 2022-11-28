@@ -3,7 +3,7 @@ import feat_3 from '../img/feat_3.png'
 function Feat__item_3 () {
     return (
         <div className="feat__item">
-            <div className="feat__item-img"><img src={feat_3} alt="" srcset="" /><button>From GBP  3600</button></div>
+            <div className="feat__item-img"><img src={feat_3} alt="" srcSet="" /><button>From GBP  3600</button></div>
             <div className="feat__item-description">
                 <div className="feat__description-title">Ontario Tower , LONDON</div>
                 <div className="feat__description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>

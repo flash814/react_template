@@ -50,21 +50,21 @@ const Presentation = function() {
 
     return (
       
-<div class="pres">
-     <div class="container">
-            <div class="pres__icon"><img src={icon__up} alt="" srcset=""/></div>
-                <div class="pres__title"><h1>Our work is the presentation 
+<div className="pres">
+     <div className="container">
+            <div className="pres__icon"><img src={icon__up} alt="" srcSet=""/></div>
+                <div className="pres__title"><h1>Our work is the presentation 
             of our capabilities.
             </h1></div>
-        <div class="pres__text regular"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
+        <div className="pres__text regular"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation </p>
 
-        <p class="semi">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
-        <div class="pres__slider">
-            <div class="pres__name">
+        <p className="semi">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
+        <div className="pres__slider">
+            <div className="pres__name">
                 <ol>
                 <li className="pres__name_title active__button" id="pres__title-1">Simple </li>
-                <li class="pres__name_title" id="pres__title-2">Transparent</li>
-                <li class="pres__name_title" id="pres__title-3">Collaborative</li>
+                <li className="pres__name_title" id="pres__title-2">Transparent</li>
+                <li className="pres__name_title" id="pres__title-3">Collaborative</li>
             </ol>
             </div>
             <Slider/>

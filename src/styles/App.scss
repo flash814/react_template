@@ -121,6 +121,10 @@ header {
 	font-size: 19px;
 }
 .register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
 	max-height: 570px;
 	max-width: 100%;
 	background-image: url(../img/reg__bg.png);
@@ -130,20 +134,37 @@ header {
 	background-size: cover;
 	.container {
 		display: block;
-		max-width: 900px;
+		max-width: 1024px;
+		height: 570px;
 	}
 }
 .reg__title {
 	padding-top: 208px;
 	padding-bottom: 60px;
 	font-size: 49px;
+	font-weight: 600;
 	color: #fff;
 	span {
 		font-size: 30px;
+		font-weight: 400;
 	}
 }
 .reg__pos {
 	padding-bottom: 168px;
+	button{
+		margin-bottom: 30px
+	}
+}
+.reg__slide_btn{
+	position: absolute;
+    right: 444px;
+    top: 600px;
+	a{
+		cursor: pointer;
+	}
+}
+.left__btn{
+	margin-right: 30px;
 }
 .pres {
 	.container {
@@ -345,11 +366,11 @@ header {
 	display: flex;
 	justify-content: space-between;
 	max-width: 100%;
+	margin-bottom: 80px;
 }
 .feat__item {
 	width: 100%;
 	max-width: 300px;
-	margin-bottom: 80px;
 	margin: 0 1%;
 	overflow: hidden;
 	cursor: pointer;

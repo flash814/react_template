@@ -10,7 +10,7 @@ const Slider = function() {
             <div className="slider">
                 <div className="slide__item  active" id="slide__1">
                     <div className="slider__item-left">
-                        <div className="slider__img"><img src={glasses} alt="" srcset=""/></div>
+                        <div className="slider__img"><img src={glasses} alt="" srcSet=""/></div>
                  </div>
                     <div className="slider__item-right">                   
                         <div className="slider__title">Browse projects, like booking a hotel online !</div>
@@ -19,7 +19,7 @@ const Slider = function() {
                 </div>
                 <div className="slide__item" id="slide__2">
                     <div className="slider__item-left">
-                        <div className="slider__img"><img src={glasses} alt="" srcset=""/></div>
+                        <div className="slider__img"><img src={glasses} alt="" srcSet=""/></div>
                  </div>
                     <div className="slider__item-right">                   
                         <div className="slider__title">Browse projects, like booking a hotel online !</div>
@@ -28,7 +28,7 @@ const Slider = function() {
                 </div>
                 <div className="slide__item" id="slide__3">
                     <div className="slider__item-left">
-                        <div className="slider__img"><img src={glasses} alt="" srcset=""/></div>
+                        <div className="slider__img"><img src={glasses} alt="" srcSet=""/></div>
                  </div>
                     <div className="slider__item-right">                   
                         <div className="slider__title">Browse projects, like booking a hotel online !</div>
