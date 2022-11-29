@@ -14,11 +14,12 @@ const Header = function() {
               <li><a href="#">discover a project</a></li>
               <li><a href="#">blog</a></li>
               <li><a href="#">find out more</a></li>
-          </ul>      
-      </nav>
-      <div className="header-btn">
+          </ul>   
+          <div className="header-btn">
           <button className="btn">login</button>
       </div>   
+      </nav>
+         
   
   </header>
     )

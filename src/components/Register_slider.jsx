@@ -62,7 +62,7 @@ const Register_slider  = function({children, infinite}) {
             <div className="slide__item_1 ">
             
                 <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana</span>.
+                    <span> of a Banana.</span>
                 </div>
                 <div className="reg__pos">
                     <button className="reg__btn btn">Become a member</button>
@@ -74,8 +74,8 @@ const Register_slider  = function({children, infinite}) {
        <div className=" slide__item_2"> 
             
                 <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana</span>.
-                </div>
+                    <span> of a Banana.</span>
+                </div>  
                 <div className="reg__pos">
                     <button className="reg__btn btn">Become a member</button>
                     
@@ -84,7 +84,7 @@ const Register_slider  = function({children, infinite}) {
         </div>
             <div className=" slide__item_3">
                 <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana</span>.
+                    <span> of a Banana.</span>
                 </div>
                 <div className="reg__pos">
                     <button className="reg__btn btn">Become a member</button>

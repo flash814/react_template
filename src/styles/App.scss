@@ -42,13 +42,18 @@ a {
 	text-decoration: none;
 }
 .navbar {
-	margin-top: 42px;
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
 	ul {
 		display: flex;
 		justify-content: space-between;
 	}
 }
 .navbar-menu {
+	margin-right: 40px;
 	a {
 		text-decoration: none;
 		font-size: 13px;
@@ -100,7 +105,7 @@ header {
 	padding-bottom: 22px;
 }
 .header-btn {
-	margin-top: 26px;
+	margin: 0 auto;
 	button {
 		padding: 15px 30px;
 		text-transform: uppercase;
@@ -139,12 +144,14 @@ header {
 	}
 }
 .reg__title {
+	
 	padding-top: 208px;
 	padding-bottom: 60px;
 	font-size: 49px;
 	font-weight: 600;
 	color: #fff;
 	span {
+		display: block;
 		font-size: 30px;
 		font-weight: 400;
 	}
@@ -157,8 +164,8 @@ header {
 }
 .reg__slide_btn{
 	position: absolute;
-    right: 444px;
-    top: 600px;
+	right: 15%;
+    top: 15%;
 	a{
 		cursor: pointer;
 	}
@@ -341,7 +348,7 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	max-width: 100%;
-	padding: 0 25px 0;
+	margin: 0 10px;
 }
 .feat__inner-box {
 	text-align: left;
@@ -361,6 +368,7 @@ header {
 	color: #8f8f8f;
 	padding-bottom: 70px;
 	max-width: 100%;
+	padding-right: 129px;
 }
 .feat__items {
 	display: flex;
