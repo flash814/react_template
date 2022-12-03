@@ -20,12 +20,13 @@
         border-radius: 12px;
         background-color: white;
         width: 800px;
-        max-height: 450px;
-      
+        max-height: 450px;   
         transition: 0.4s all;
         align-items: center;
-        padding-top: 70px;
-        padding-bottom: 50px;
+        padding-top: 80px;
+        padding-bottom: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
         
         & button.btn__price  {
             float: right;
@@ -38,7 +39,7 @@
             outline: none;
             border-style: none;
             border-radius: 5px;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
         }
         & .feat__item{
             &__img {
@@ -115,12 +116,6 @@ button.close__btn {
     padding-bottom: 0;
     border-bottom: none;
     margin-bottom: 0;
-}
-
-.feat__content {
-    align-items: center;
-    padding-top: 70px;
-    padding-bottom: 50px;
 }
 
 .feat__content .feat__description-title {

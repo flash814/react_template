@@ -3,11 +3,9 @@ import {} from '../popup__items/feat__popup.scss'
 
 function Feat__popup(props) {
     return (props.trigger) ? (
-        <div className="feat__popup">
-            <div className="feat__content">
+        <div className="feat__popup">         
                 <button className="close__btn" onClick={()=> props.setTrigger(false) } >x</button>                
                 { props.children}
-            </div>
         </div>
 
     ) : "";
