@@ -1,15 +1,14 @@
-import { render } from "@testing-library/react";
 import React from "react";
-import Feat__item_1 from "./Feat__item_1";
-import Feat__item_2 from "./Feat__item_2";
-import Feat__item_3 from "./Feat__item_3";
-
-function Feat__items() {
+import {} from './popup__items/feat__popup.scss'
+function Feat__items({active, serActive}) {
 
     return (
-        
-        {Feat__item_1}
-        
+        <div className="feat__popup">
+            <div className="feat__content">
+            
+            </div>
+        </div>
+
     );
 }
 

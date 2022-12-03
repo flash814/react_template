@@ -1,8 +1,10 @@
-import React from "react"; 
+import React, { useState } from "react"; 
 import feat_1 from '../img/feat_1.png'
+import Feat__popup from "./popup__items/Feat__popup";
 function Feat__item_1 () {
+     
     return (
-        <div className="feat__item">
+        <div className={active ? "feat__item feat__popup" : "feat__item feat__popup active"} onClick={() => setModalActive(true)}>
             <div className="feat__item-img"><img src={feat_1} alt="" srcSet="" /><button>From GBP  3600</button></div>
             <div className="feat__item-description">
                 <div className="feat__description-title">Ontario Tower , LONDON</div>
