@@ -1,10 +1,11 @@
 html {
 	margin-right: calc(-1 * (100vw - 100%));
+	font-size: 10px;
 }
 body {
 	position: relative;
 	font-family: 'Noto Sans', sans-serif;
-	font-size: 16px;
+	font-size: 1.6rem;
 	line-height: 1.4;
 	color: #000;
 	min-width: 320px;
@@ -56,7 +57,7 @@ a {
 	margin-right: 40px;
 	a {
 		text-decoration: none;
-		font-size: 13px;
+		font-size: 1.3rem;
 		font-family: 'Open Sans ', sans-serif;
 		font-weight: 600;
 		padding: 0px 15px;
@@ -83,7 +84,7 @@ a {
 	align-items: center;
 	a {
 		font-family: 'Nunito', sans-serif;
-		font-size: 31px;
+		font-size: 3.1rem;
 		color: rgb(109, 110, 112);
 		text-transform: uppercase;
 		margin-left: 50px;
@@ -123,7 +124,7 @@ header {
 }
 .reg__btn {
 	padding: 30px 50px;
-	font-size: 19px;
+	font-size: 1.9rem;
 }
 .register {
 	display: flex;
@@ -152,7 +153,7 @@ header {
 	color: #fff;
 	span {
 		display: block;
-		font-size: 30px;
+		font-size: 3rem;
 		font-weight: 400;
 	}
 }
@@ -203,7 +204,7 @@ header {
 .pres__name_title {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 300;
-	font-size: 33px;
+	font-size: 3.3rem;
 	color: #5c5c5c;
 	display: flex;
 	text-align: center;
@@ -261,14 +262,14 @@ header {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
 	color: #add136;
-	font-size: 25px;
+	font-size: 2.5rem;
 	padding-top: 72px;
 	padding-bottom: 34px;
 }
 .slider__text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 17px;
+	font-size: 1.7rem;
 	color: #606060;
 	padding-bottom: 111px;
 }
@@ -293,12 +294,12 @@ header {
 	padding-bottom: 39px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 23px;
+	font-size: 2.3rem;
 }
 .find__text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 17px;
+	font-size: 1.7rem;
 	padding-bottom: 31px;
 	max-width: 257px;
 }
@@ -311,7 +312,7 @@ header {
 	outline: none;
 	border-style: none;
 	color: #fff;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
 	background-color: #add136;
@@ -322,7 +323,7 @@ header {
 	outline: none;
 	border-style: none;
 	color: #fff;
-	font-size: 14px;
+	font-size: 1.4rem;
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
 }
@@ -356,7 +357,7 @@ header {
 .feat__inner-title {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
-	font-size: 29px;
+	font-size: 2.9rem;
 	color: #515151;
 	padding-top: 81px;
 	padding-bottom: 33px;
@@ -364,7 +365,7 @@ header {
 .feat__inner-text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 17px;
+	font-size: 1.7rem;
 	color: #8f8f8f;
 	padding-bottom: 70px;
 	max-width: 100%;
@@ -402,7 +403,7 @@ header {
 		width: 139px;
 		height: 35px;
 		background-color: #26a6d1;
-		font-size: 16px;
+		font-size: 1.6rem;
 		font-weight: 400;
 		color: #fff;
 		outline: none;
@@ -423,7 +424,7 @@ header {
 	text-align: start;
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 600;
-	font-size: 17px;
+	font-size: 1.7rem;
 	color: #484848;
 	padding-top: 30px;
 	padding-bottom: 19px;
@@ -431,7 +432,7 @@ header {
 .feat__description-text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #484848;
 	text-align: start;
 	padding-bottom: 23px;
@@ -446,13 +447,13 @@ header {
 		box-shadow: none;
 		width: 181px;
 		height: 50px;
-		font-size: 14px;
+		font-size: 1.4rem;
 	}
 }
 .feat__complete {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #8d8d8d;
 	padding-bottom: 20px;
 	progress {
@@ -498,14 +499,14 @@ progress {
 .part__inner-title {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
-	font-size: 39px;
+	font-size: 3.9rem;
 	color: #9ec02d;
 	padding-bottom: 51px;
 }
 .part__inner-text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 19px;
+	font-size: 1.9rem;
 	color: #949494;
 	padding-bottom: 103px;
 }
@@ -528,7 +529,7 @@ progress {
 	text-align: center;
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 500;
-	font-size: 21px;
+	font-size: 2.1rem;
 	color: #9ec02d;
 	padding-top: 25px;
 	padding-bottom: 22px;
@@ -536,7 +537,7 @@ progress {
 .part__item-text {
 	font-family: 'Open Sans ', sans-serif;
 	font-weight: 400;
-	font-size: 13px;
+	font-size: 1.3rem;
 	color: #848484;
 	padding-bottom: 27px;
 }
@@ -548,7 +549,7 @@ progress {
 	align-items: center;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
-	font-size: 15px;
+	font-size: 1.5rem;
 	color: #494949;
 	margin: auto;
 	margin-left: 18px;

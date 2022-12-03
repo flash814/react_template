@@ -1,16 +1,16 @@
 import React from 'react'
 import {} from '../popup__items/feat__popup.scss'
 
-const Feat__popup = ({active, setActive}) => {
-
-    return(
-        <div className={active ? "feat__popup active" : "feat__popup"} onClick={ () => setActive(false)}>
-            <div className="feat__content" onClick={e => e.stopPropagation()}>
-                
+function Feat__popup(props) {
+    return (props.trigger) ? (
+        <div className="feat__popup">
+            <div className="feat__content">
+                <button className="close__btn" onClick={()=> props.setTrigger(false) } >x</button>                
+                { props.children}
             </div>
         </div>
 
-    )
+    ) : "";
 
 }
 

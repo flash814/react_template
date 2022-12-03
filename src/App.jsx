@@ -6,7 +6,7 @@ import Presentation from "./components/Presentation"
 import Find from "./components/Find";
 import Footer from "./components/Footer";
 import Feat from "./components/Feat";
-import Feat__popup from "./components/popup__items/Feat__popup";
+import Feat__popup from "./components/popup__items/feat__popup";
 import Part from "./components/Part";
 function App() {
   const [modalActive, setModalActive] = useState(true)
@@ -17,10 +17,10 @@ function App() {
         <Presentation/>
         <Find/>
         <Feat/>
-        <Feat__popup active={modalActive} setActive={setModalActive}/>
+        <Feat__popup/>
         <Part/>
         <Footer/>
-
+        
     </div>
   );
 }
