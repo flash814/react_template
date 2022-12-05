@@ -1,0 +1,18 @@
+@import url(./variables.scss);
+@import url(./media.scss);
+
+@mixin desktop() {
+    @media  (max-width: $breakpoint_xl) {
+        @content;  
+   } 
+}
+@mixin tablet() {
+    @media  (max-width: $breakpoint_md) {
+        @content;  
+   } 
+}
+@mixin mobile() {
+    @media  (max-width: $breakpoint_sm) {
+        @content;  
+   } 
+}

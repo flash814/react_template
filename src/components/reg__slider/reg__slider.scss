@@ -1,4 +1,4 @@
-.register{
+.reg{
     height: 580px;
     width: 100%;
     
@@ -23,7 +23,7 @@
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
 }
-.slide__item_{
+.slider__item_{
     &1{
         min-width: 1024px;
         max-width: 1024px;

@@ -1,0 +1,29 @@
+@import url(./media_breakpoints.scss);
+
+@include desktop {
+    header {
+
+    }
+    .register {
+        display: none;
+    }
+}
+
+@include tablet {
+    header {
+        display: none;
+    }
+    .register {
+        display: none;
+    }
+}
+
+@include mobile {
+    header {
+        display: none;
+    }
+    .register {
+        display: none;
+    }
+}
+

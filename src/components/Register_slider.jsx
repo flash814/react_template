@@ -51,7 +51,7 @@ const Register_slider  = function({children, infinite}) {
     
 
     return (
-    <><div className="register">
+    <><div className="reg">
         <div className="container">
         <div className="window">
         <div className="reg__slider"
@@ -59,7 +59,7 @@ const Register_slider  = function({children, infinite}) {
                 transform: `translateX(${offset}px)`
             }}
         >
-            <div className="slide__item_1 ">
+            <div className="slider__item_1 ">
             
                 <div className="reg__title">Intellectual Property has the Shelf Life
                     <span> of a Banana.</span>
@@ -71,7 +71,7 @@ const Register_slider  = function({children, infinite}) {
             
             </div>
             
-       <div className=" slide__item_2"> 
+       <div className=" slider__item_2"> 
             
                 <div className="reg__title">Intellectual Property has the Shelf Life
                     <span> of a Banana.</span>
@@ -82,7 +82,7 @@ const Register_slider  = function({children, infinite}) {
                 </div>
             
         </div>
-            <div className=" slide__item_3">
+            <div className=" slider__item_3">
                 <div className="reg__title">Intellectual Property has the Shelf Life
                     <span> of a Banana.</span>
                 </div>
@@ -92,7 +92,7 @@ const Register_slider  = function({children, infinite}) {
                 </div>
                 </div>
                 </div>
-        </div><div className="reg__slide_btn">
+        </div><div className="reg__slider_btn">
                         <a className="left__btn" onClick={handleLeftClick}><img src={left} alt="" srcSet="" /></a>
                         <a className="right__btn" onClick={handleRightClick} ><img src={right} alt="" /></a>
                     </div>
