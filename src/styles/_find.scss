@@ -1,5 +1,5 @@
 .find {
-	display: none;
+	display: flex;
 	justify-content: center;
 	&__title {
 		padding-top: 46px;
@@ -47,6 +47,17 @@
 			width: 50%;
 		}
 	}
+}
+
+.buyers {
+	display: flex;
+	justify-content: left;
+}
+
+.properties {
+	background: #e2f8ff;
+	display: flex;
+	justify-content: right;
 }
 
 #find__btn {

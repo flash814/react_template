@@ -1,7 +1,7 @@
 @import '../components/reg__slider/reg__slider.scss';
 
 .reg {
-	display: none;
+	display: flex;
 	align-items: center;
 	justify-content: center;
 	user-select: none;
@@ -48,13 +48,21 @@
         transition-timing-function: ease-in-out;
 		&_btn{
 			position: absolute;
-			right: 17%;
-			top: 17%;
+			right: 15%;
+			top: 15%;
 			a{
 				cursor: pointer;
 			}
 		}
 	}
+}
+
+.window {
+    
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
 }
 
 .slider__item_{

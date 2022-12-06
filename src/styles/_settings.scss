@@ -55,6 +55,17 @@ ol, ul ,li {
 	border-radius: 25px;
 	color: #fff;
 }
+.container {
+	display: block;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 1024px;
+	text-align: center;
+	width: 100%;
+	max-width: 1024px;
+}
 
 .left__arrow{
 	margin-right: 30px;
