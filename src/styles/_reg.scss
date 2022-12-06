@@ -1,0 +1,73 @@
+@import '../components/reg__slider/reg__slider.scss';
+
+.reg {
+	display: none;
+	align-items: center;
+	justify-content: center;
+	user-select: none;
+	max-height: 580px;
+	max-width: 100%;
+	background-image: url(../img/reg__bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-align: center;
+	background-size: cover;
+	.container {
+		display: block;
+		max-width: 1024px;
+		height: 570px;
+	}
+	&__btn {
+		padding: 30px 50px;
+		font-size: 1.9rem;
+	}
+	&__title {
+		padding-top: 208px;
+		padding-bottom: 60px;
+		font-size: 49px;
+		font-weight: 600;
+		color: #fff;
+		span {
+			display: block;
+			font-size: 3rem;
+			font-weight: 400;
+		}
+	}
+	&__pos {
+		padding-bottom: 168px;
+		button{
+			margin-bottom: 30px
+		}
+	}
+	&__slider{
+        height: 100%;
+        display: flex;
+        transition: translate;
+        transition-property: transform;
+        transition-duration: 300ms;
+        transition-timing-function: ease-in-out;
+		&_btn{
+			position: absolute;
+			right: 17%;
+			top: 17%;
+			a{
+				cursor: pointer;
+			}
+		}
+	}
+}
+
+.slider__item_{
+    &1{
+        min-width: 1024px;
+        max-width: 1024px;
+    }
+    &2{
+        min-width: 1024px;
+        max-width: 1024px;
+    }
+    &3{
+        min-width: 1024px;
+        max-width: 1024px;
+    }
+}

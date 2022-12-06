@@ -1,5 +1,4 @@
 import React, { Children, children, cloneElement, useEffect, useState } from "react";
-import Register from "./Register";
 import left from '../img/left.png'
 import right from '../img/right.png'
 import {} from '../components/reg__slider/reg__slider'
@@ -93,8 +92,8 @@ const Register_slider  = function({children, infinite}) {
                 </div>
                 </div>
         </div><div className="reg__slider_btn">
-                        <a className="left__btn" onClick={handleLeftClick}><img src={left} alt="" srcSet="" /></a>
-                        <a className="right__btn" onClick={handleRightClick} ><img src={right} alt="" /></a>
+                        <a className="left__arrow" onClick={handleLeftClick}><img src={left} alt="" srcSet="" /></a>
+                        <a className="right__arrow" onClick={handleRightClick} ><img src={right} alt="" /></a>
                     </div>
     </div>
     {pages}</div></>
@@ -102,4 +101,4 @@ const Register_slider  = function({children, infinite}) {
      )
     };
     
-    export default Register_slider;
+    export default Register_slider

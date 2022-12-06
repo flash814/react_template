@@ -1,0 +1,61 @@
+.find {
+	display: none;
+	justify-content: center;
+	&__title {
+		padding-top: 46px;
+		padding-bottom: 39px;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 400;
+		font-size: 2.3rem;
+	}
+	&__text {
+		font-family: 'Open Sans ', sans-serif;
+		font-weight: 400;
+		font-size: 1.7rem;
+		padding-bottom: 31px;
+		max-width: 257px;
+	}
+	&__img {
+		padding-right: 47px;
+		padding-right: 47px;
+		padding-left: 78px;
+		padding-top: 96px;
+	}
+	&__item{
+		&-btn {
+			padding-bottom: 47px;
+		}
+	}
+	&__btn {
+		padding: 24px 26px 20px;
+		border-radius: 10px;
+		outline: none;
+		border-style: none;
+		color: #fff;
+		font-size: 1.4rem;
+		font-family: 'Open Sans ', sans-serif;
+		font-weight: 500;
+		background-color: #add136;
+	}
+	&__bg{
+		&-left {
+			background: #e2f8ff;
+			width: 50%;
+		}
+		&-right {
+			background: #f5f9eb;
+			width: 50%;
+		}
+	}
+}
+
+#find__btn {
+	background-color: #26a6d1;
+	border-color: #26a6d1;
+	outline: none;
+	border-style: none;
+	color: #fff;
+	font-size: 1.4rem;
+	font-family: 'Open Sans ', sans-serif;
+	font-weight: 500;
+}

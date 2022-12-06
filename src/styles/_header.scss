@@ -1,0 +1,144 @@
+
+
+
+header {
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	max-width: 1024px;
+	padding-bottom: 22px;
+
+    @include __tablet_l{
+        
+    }
+
+    @include __tablet_m{
+
+    }
+
+    @include __mobile_l{
+
+    }
+
+    @include __mobile_m{
+
+    }
+    @include __mobile_s{
+
+    }
+    
+}
+
+.header__logo {
+	margin-top: 30px;
+	position: relative;
+	display: flex;
+	align-items: center;
+    @include __tablet_l{
+        display: none;   
+    }
+
+    @include __tablet_m{
+        display: none;
+    }
+
+    @include __mobile_l{
+        display: none;
+    }
+
+    @include __mobile_m{
+        display: none;
+    }
+    @include __mobile_s{
+        display: none;        
+    }
+	a {
+		font-family: 'Nunito', sans-serif;
+		font-size: 3.1rem;
+		color: rgb(109, 110, 112);
+		text-transform: uppercase;
+		margin-left: 50px;
+		&::before {
+			content: url("../img/logo.png");
+			margin: 0;
+			position: absolute;
+			top: 50%;
+			transform: translate(0,-50%);
+			left: 3%;
+		}
+	}
+}
+
+.navbar {
+	margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    @include __tablet_l{
+        margin: 30px auto 0; 
+    }
+
+    @include __tablet_m{
+        margin: 30px auto 0;
+        display: block;
+    }
+
+    @include __mobile_l{
+        display: none;  
+    }
+
+    @include __mobile_m{
+        display: none;  
+    }
+    @include __mobile_s{
+        display: none;  
+    }
+	&__btn {
+        @include __tablet_m{
+            
+        }
+        margin: 0 auto;
+        button {
+            padding: 15px 30px;
+            text-transform: uppercase;
+        }
+    }
+    &__menu {
+		
+
+        @include __tablet_l{
+        
+        }
+    
+        @include __tablet_m{
+    
+        }
+    
+        @include __mobile_l{
+    
+        }
+    
+        @include __mobile_m{
+    
+        }
+        @include __mobile_s{
+    
+        }
+		a {
+			text-decoration: none;
+			font-size: 1.3rem;
+			font-family: 'Open Sans ', sans-serif;
+			font-weight: 600;
+			padding: 0px 15px;
+			text-transform: uppercase;
+			color: rgb(109, 110, 112);
+			margin-bottom: 15px;
+		}
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;
+	}
+
+}
