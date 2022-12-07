@@ -1,4 +1,3 @@
-import {} from '../reg__slider/reg__slider.scss'
 
 
 

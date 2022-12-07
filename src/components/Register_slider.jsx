@@ -1,8 +1,7 @@
 import React, { Children, children, cloneElement, useEffect, useState } from "react";
 import left from '../img/left.png'
 import right from '../img/right.png'
-import {} from '../components/reg__slider/reg__slider'
-import {} from '../components/reg__slider/reg__slider.scss'
+    
 
 
 

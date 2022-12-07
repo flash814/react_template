@@ -1,21 +1,88 @@
-@import '../components/reg__slider/reg__slider.scss';
-
 .reg {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	user-select: none;
 	max-height: 580px;
+	min-width: 100%;
 	max-width: 100%;
 	background-image: url(../img/reg__bg.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	background-size: cover;
+	
+	object-fit: cover;
+	object-position: center;
+	@include __tablet_l{
+        background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+    }
+
+    @include __tablet_m{
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+    }
+
+    @include __mobile_l{
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+	}
+
+    @include __mobile_m{
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+	}
+    @include __mobile_s{
+		background-repeat: no-repeat;
+		background-size: cover;
+		text-align: center;
+		object-fit: cover;
+		object-position: center;
+		overflow: hidden;
+	}
 	.container {
 		display: block;
 		max-width: 1024px;
 		height: 570px;
+		@include __tablet_l{
+			min-width: 979px;
+			max-width: 979px;
+        }
+    
+        @include __tablet_m{
+			min-width: 768px;
+			max-width: 768px;
+        }
+    
+        @include __mobile_l{
+			min-width: 600px;
+			max-width: 600px;
+        }
+    
+        @include __mobile_m{
+			min-width: 480px;
+			max-width: 480px;
+        }
+        @include __mobile_s{
+			min-width: 350px;
+			max-width: 350px;
+        }
 	}
 	&__btn {
 		padding: 30px 50px;
@@ -69,13 +136,82 @@
     &1{
         min-width: 1024px;
         max-width: 1024px;
+		@include __tablet_l{
+			min-width: 979px;
+			max-width: 979px;
+        }
+    
+        @include __tablet_m{
+			min-width: 768px;
+			max-width: 768px;
+        }
+    
+        @include __mobile_l{
+			min-width: 600px;
+			max-width: 600px;
+        }
+    
+        @include __mobile_m{
+			min-width: 480px;
+			max-width: 480px;
+        }
+        @include __mobile_s{
+			min-width: 350px;
+			max-width: 350px;
+        }
     }
     &2{
         min-width: 1024px;
         max-width: 1024px;
+		@include __tablet_l{
+			min-width: 979px;
+			max-width: 979px;
+        }
+    
+        @include __tablet_m{
+			min-width: 768px;
+			max-width: 768px;
+        }
+    
+        @include __mobile_l{
+			min-width: 600px;
+			max-width: 600px;
+        }
+    
+        @include __mobile_m{
+			min-width: 480px;
+			max-width: 480px;
+        }
+        @include __mobile_s{
+			min-width: 350px;
+			max-width: 350px;
+        }
     }
     &3{
         min-width: 1024px;
         max-width: 1024px;
+		@include __tablet_l{
+			min-width: 979px;
+			max-width: 979px;
+        }
+    
+        @include __tablet_m{
+			min-width: 768px;
+			max-width: 768px;
+        }
+    
+        @include __mobile_l{
+			min-width: 600px;
+			max-width: 600px;
+        }
+    
+        @include __mobile_m{
+			min-width: 480px;
+			max-width: 480px;
+        }
+        @include __mobile_s{
+			min-width: 350px;
+			max-width: 350px;
+        }
     }
 }
