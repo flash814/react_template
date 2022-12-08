@@ -1,7 +1,7 @@
 import React, { Children, children, cloneElement, useEffect, useState } from "react";
 import left from '../img/left.png'
 import right from '../img/right.png'
-    
+import $ from 'jquery';  
 
 
 
@@ -11,6 +11,7 @@ const Register_slider  = function({children, infinite}) {
     const [offset, setOffset] = useState(0)
     const [width, setWidth] = useState(1024)
 
+    
     useEffect(() => {
         setPages(
             Children.map(children, (child) => {
