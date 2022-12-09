@@ -9,7 +9,7 @@ const Register_slider  = function({children, infinite}) {
     
     const [pages, setPages] = useState ([])
     const [offset, setOffset] = useState(0)
-    const [width, setWidth] = useState(1024)
+    const [width, setWidth] = useState(10)
 
     
     useEffect(() => {
