@@ -10,7 +10,6 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	text-align: center;
-	
 	object-fit: cover;
 	object-position: center;
 	@include __tablet_l{
@@ -20,6 +19,7 @@
 		object-fit: cover;
 		object-position: center;
 		overflow: hidden;
+		max-height: 400px;
     }
 
     @include __tablet_m{
@@ -63,6 +63,7 @@
 		@include __tablet_l{
 			min-width: 979px;
 			max-width: 979px;
+			height: 400px;
         }
     
         @include __tablet_m{
@@ -94,6 +95,34 @@
 		font-size: 49px;
 		font-weight: 600;
 		color: #fff;
+			@include __tablet_l{
+				padding-top: 100px;
+				padding-bottom: 50px;
+				font-size: 3.5rem;
+			}
+	
+			@include __tablet_m{
+				padding-top: 100px;
+				padding-bottom: 50px;
+				font-size: 3rem;
+			}
+	
+			@include __mobile_l{
+				padding-top: 100px;
+				padding-bottom: 50px;
+				font-size: 2.5rem;
+			}
+	
+			@include __mobile_m{
+				padding-top: 100px;
+				padding-bottom: 50px;
+				font-size: 1.9rem;
+			}
+			@include __mobile_s{
+				padding-top: 100px;
+				padding-bottom: 50px;
+				font-size: 1.5rem;
+			}
 		span {
 			display: block;
 			font-size: 3rem;
@@ -117,6 +146,24 @@
 			position: absolute;
 			right: 15%;
 			top: 560px;
+			@include __tablet_l{
+				top: 430px;
+			}
+	
+			@include __tablet_m{
+				top: 470px;
+			}
+	
+			@include __mobile_l{
+	
+			}
+	
+			@include __mobile_m{
+	
+			}
+			@include __mobile_s{
+	
+			}
 			a{
 				cursor: pointer;
 			}
