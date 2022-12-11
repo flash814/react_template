@@ -165,6 +165,7 @@
         
         
 		@include __mobile_l{
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -175,6 +176,7 @@
         }
 
         @include __mobile_m{
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -185,6 +187,7 @@
         }
 
         @include __mobile_s{
+            display: none;
             position: fixed;
             top: 0;
             left: 0;
@@ -194,7 +197,19 @@
             z-index: 2;
         }
         &.active{
-            top: 0;
+            
+            @include __mobile_l{
+                display: block;
+            }
+
+            @include __mobile_m{
+                display: block;
+            }
+
+            @include __mobile_s{
+                display: block;
+            }
+            
             
         }
 		a {
