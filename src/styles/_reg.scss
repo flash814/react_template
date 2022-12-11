@@ -39,6 +39,7 @@
 		object-fit: cover;
 		object-position: center;
 		overflow: hidden;
+		margin-top: 60px;
 	}
 
     @include __mobile_m{
@@ -48,6 +49,7 @@
 		object-fit: cover;
 		object-position: center;
 		overflow: hidden;
+		margin-top: 60px;
 	}
     @include __mobile_s{
 		background-repeat: no-repeat;
@@ -56,6 +58,7 @@
 		object-fit: cover;
 		object-position: center;
 		overflow: hidden;
+		margin-top: 60px;
 	}
 	.container {
 		display: block;
@@ -152,18 +155,18 @@
 			}
 	
 			@include __tablet_m{
-				top: 470px;
+				top: 430px;
 			}
 	
 			@include __mobile_l{
-	
+				top: 340px;
 			}
 	
 			@include __mobile_m{
-	
+				top: 340px;
 			}
 			@include __mobile_s{
-	
+				top: 340px;
 			}
 			a{
 				cursor: pointer;
