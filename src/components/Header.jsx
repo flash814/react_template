@@ -1,8 +1,15 @@
 import React from "react";
-
+import $ from 'jquery';
 
 const Header = function() {
     
+
+
+        $('.navbar__burger').on('click',function(event){
+            $('.navbar__burger, .navbar__menu').toggleClass('active');
+        });
+    
+
     return (
       
     <header className="header">
