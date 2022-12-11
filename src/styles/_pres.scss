@@ -1,19 +1,66 @@
 
 .pres {
-	display:none;
+	display:flex;
 	.container {
 		display: block;
 	}
 	&__icon {
 		padding-top: 100px;
 		padding-bottom: 54px;
+		@include __tablet_l{
+			padding-top: 25px;
+    		padding-bottom: 15px;
+		}
+		@include __tablet_m{
+			padding-top: 25px;
+    		padding-bottom: 15px;
+		}
+		@include __mobile_l{
+
+		}
+		@include __mobile_m{
+
+		}
+		@include __mobile_s{
+
+		}
 	}
 	&__title {
 		padding-bottom: 71px;
+		@include __tablet_l {
+			padding-bottom: 10px;
+		}
+		@include __tablet_m{
+			padding-bottom: 10px;
+		}
+		@include __mobile_l{
+			padding-bottom: 10px;
+		}
+		@include __mobile_m{
+			padding-bottom: 10px;
+		}
+		@include __mobile_s{
+			padding-bottom: 10px;
+		}
 	}
 	&__text {
 		color: #515151;
 		padding-bottom: 162px;
+		@include __tablet_l {
+			padding-bottom: 25px;
+		}
+		@include __tablet_m{
+			padding-bottom: 25px;
+		}
+		@include __mobile_l{
+			padding-bottom: 25px;
+		}
+		@include __mobile_m{
+			padding-bottom: 25px;
+		}
+		@include __mobile_s{
+			padding-bottom: 25px;
+		}
 	}
 	&__items {
 		display: none;
@@ -29,6 +76,15 @@
 			justify-content: space-between;
 			margin: 0;
 			border-bottom: 1px solid #e6e6e6;
+			@include __mobile_l{
+				display: block;
+			}
+			@include __mobile_m{
+				display: block;
+			}
+			@include __mobile_s{
+				display: block;
+			}
 			li {
 				::before {
 					border-bottom: 1px solid;
@@ -45,6 +101,27 @@
 			text-align: center;
 			padding-bottom: 46px;
 			cursor: pointer;
+			
+			@include __tablet_l{
+				font-size: 3rem;
+				padding-bottom: 20px;
+			}
+			@include __tablet_m{
+				font-size: 2.5rem;
+				padding-bottom: 20px;
+			}
+			@include __mobile_l{
+				font-size: 2.5rem;
+				padding-bottom: 20px;
+			}
+			@include __mobile_m{
+				font-size: 2.5rem;
+				padding-bottom: 20px;
+			}
+			@include __mobile_s{
+				font-size: 2.5rem;
+				padding-bottom: 20px;
+			}
 			&::before {
 				content: url(../img/Ellipse.png);
 				align-items: center;

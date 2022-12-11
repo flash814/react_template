@@ -1,4 +1,4 @@
-import React, { Children, children, cloneElement, useEffect, useState } from "react";
+import React, { Children, children, cloneElement, useEffect, useState, useContext } from "react";
 import left from '../img/left.png'
 import right from '../img/right.png'
 import $ from 'jquery';  
@@ -9,7 +9,17 @@ const Register_slider  = function({children, infinite}) {
     
     const [pages, setPages] = useState ([])
     const [offset, setOffset] = useState(0)
-    const [width, setWidth] = useState(10)
+    const [size, setSize] = useState({
+        x: window.innerWidth,
+        y: window.innerHeight
+      });
+      const updateSize = () =>
+        setSize({
+          x: window.innerWidth,
+          y: window.innerHeight
+        });
+      useEffect(() => (window.onresize = updateSize), []);
+    const [width, setWidth] = useState(size.x)
 
     
     useEffect(() => {
