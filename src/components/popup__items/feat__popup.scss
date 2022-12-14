@@ -16,18 +16,8 @@
         }
     }
     &__content{
-        padding: 20px;
-        border-radius: 12px;
-        background-color: white;
-        width: 800px;
-        max-height: 450px;   
-        transition: 0.4s all;
-        align-items: center;
-        padding-top: 80px;
-        padding-bottom: 70px;
-        padding-left: 40px;
-        padding-right: 40px;
-        
+       
+
         & button.btn__price  {
             float: right;
             width: 139px;
@@ -52,7 +42,7 @@
                 padding: 0;
                 border: none;
                 margin: auto;
-                &__title {
+                &-title {
                     text-align: center;
                     font-family: 'Open Sans ', sans-serif;
                     font-weight: 600;
@@ -61,7 +51,7 @@
                     padding-top: 0;
                     padding-bottom: 25px;
                 }
-                &__text {
+                &-text {
                     font-family: 'Open Sans ', sans-serif;
                     font-weight: 400;
                     font-size: 2rem;
@@ -86,10 +76,8 @@
 
 .close__btn{
     font-size: 2rem;
-    position: absolute;
-    top: 25%;
-    right: 28%;
-    z-index: 1001;
+    position: relative;
+    z-index: 80;
 }
 .feat__content .feat__item-img {
     float: left;
@@ -97,12 +85,7 @@
     justify-content: start;
 }
 
-button.close__btn {
-    align-items: center;
-    float: right;
-    margin: 0;
-    padding: 0;
-}
+
 
 .feat__content .feat__item-description {
     display: block;

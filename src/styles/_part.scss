@@ -6,7 +6,15 @@
 	background-image: url(../img/bg__part.png);
 	background-size: cover;
 	background-repeat: no-repeat;
-	display:none;
+	@include __mobile_l{
+		max-height: max-content;
+	}
+	@include __mobile_m{
+		max-height: max-content;
+	}
+	@include __mobile_s{
+		max-height: max-content;
+	}
 	.container {
 		display: block;
 	}
@@ -28,11 +36,21 @@
 		&-items {
 			display: flex;
 			justify-content: space-between;
+			@include __mobile_l{
+				display: block;
+			}
+			@include __mobile_m{
+				display: block;
+			}
+			@include __mobile_s{
+				display: block;
+			}
 		}
 		&-item {
 			width: 100%;
 			max-width: 396px;
 			padding: 36px 25px 42px;
+			
 		}
 	}
 	&__item{
@@ -69,6 +87,9 @@
 			border-right: 23px solid transparent;
 			margin-left: 84px;
 			margin-bottom: 60px;
+			@include __tablet_l{
+				margin-bottom: 40px;
+			}
 		}
 		
 	}

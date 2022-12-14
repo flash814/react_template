@@ -372,10 +372,22 @@
 	text-align: center;
 	width: 100%;
 	max-width: 1024px;
-    
+    @include __tablet_l{
+		max-width: 979px;
+	}
 	@include __tablet_m{
-        padding: 0;
-    }
+		max-width: 768px;
+	}
+	@include __mobile_l{
+		max-width: 600px;
+	}
+	@include __mobile_m{
+		max-width: 480px;
+	}
+	@include __mobile_s{
+		max-width: 350px;
+	}
+	
 
 }
 ul.navbar__menu {

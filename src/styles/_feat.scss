@@ -1,11 +1,36 @@
+
+.arrow {
+    margin-left: 15px;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-top: 7px solid;
+    border-right: 7px solid;
+    margin-top: 3px;
+    margin-left: 15px;
+    transform: rotate(45deg);
+    color: #bfdb62;
+}
+
+.arrow::after{
+    content: "";
+    box-sizing: border-box;
+}
+
 .feat{
-    display:none;
+    
     &__inner {
         display: flex;
         justify-content: space-between;
         align-items: center;
         max-width: 100%;
         margin: 0 10px;
+        @include __mobile_m{
+            display: block;
+        }
+        @include __mobile_s{
+            display: block;
+        }
         &-box {
             text-align: left;
         }
@@ -27,6 +52,12 @@
             padding-right: 129px;
         }
         &-btn {
+            @include __mobile_m{
+                margin-bottom: 30px;
+            }
+            @include __mobile_s{
+                margin-bottom: 30px;
+            }
             button {
                 color: #515151;
                 border-color: #515151;
@@ -46,15 +77,47 @@
         margin: 0 1%;
         overflow: hidden;
         cursor: pointer;
+        @include __tablet_m{
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        @include __mobile_l{
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        @include __mobile_m{
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        @include __mobile_s{
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
         &s {
             display: flex;
 	        justify-content: space-between;
 	        max-width: 100%;
 	        margin-bottom: 80px;
+            @include __tablet_m{
+                display: block;
+                
+            }
+            @include __mobile_l{
+                display: block;
+                
+            }
+            @include __mobile_m{
+                display: block;
+                
+            }
+            @include __mobile_s{
+                display: block;
+                
+            }
         }
         &-img {
+            overflow: hidden;
             display: flex;
-            justify-content: right;
             img {
                 float: left;
                 max-height: 226px;
@@ -62,21 +125,27 @@
                 max-width: 300px;
                 overflow: hidden;
             }
-            button {
-                float: right;
-                position: absolute;
-                margin-top: 170px;
-                margin-right: 15px;
-                z-index: 50;
-                width: 139px;
-                height: 35px;
-                background-color: #26a6d1;
-                font-size: 1.6rem;
-                font-weight: 400;
-                color: #fff;
-                outline: none;
-                border-style: none;
-                border-radius: 5px;
+            
+        }
+        button {
+            float: right;
+            position: absolute;
+            margin: -50px 0 0 -22px;
+            z-index: 50;
+            width: 100%;
+            max-width: 139px;
+            height: 35px;
+            background-color: #26a6d1;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: #fff;
+            outline: none;
+            border-style: none;
+            border-radius: 5px;
+            @include __tablet_l{
+                font-size: 1.3rem;
+                
+                
             }
         }
         &-description {
@@ -98,12 +167,27 @@
             color: #484848;
             padding-top: 30px;
             padding-bottom: 19px;
+            @include __tablet_l{
+                font-size: 1.7rem;
+            }
+            @include __tablet_m{
+                font-size: 1.7rem;
+            }
+            @include __mobile_l{
+                font-size: 1.7rem;
+            }
+            @include __mobile_m{
+                font-size: 1.7rem;
+            }
+            @include __mobile_s{
+                font-size: 1.7rem;
+            }
         }
         &-text {
             font-family: 'Open Sans ', sans-serif;
             font-weight: 400;
             font-size: 1.3rem;
-            color: #484848;
+            color: #949494;
             text-align: start;
             padding-bottom: 23px;
         }
@@ -129,11 +213,80 @@
         margin-bottom: 26px;
     }
     &__details {
-        text-align: end;
-        padding-bottom: 28px;
+        display: flex;
+
+        &_name{
+            text-align: end;
+            padding-bottom: 28px;
+            margin-left: auto; 
+            margin-right: 0;
+        }
+    }
+    &__content{
+        padding: 20px;
+        border-radius: 12px;
+        background-color: white;
+        width: 800px;
+        max-height: 450px;   
+        transition: 0.4s all;
+        align-items: center;
+        padding-top: 80px;
+        padding-bottom: 70px;
+        padding-left: 40px;
+        padding-right: 40px;
+        @include __tablet_l{
+            width: 768px;
+        }
+        @include __tablet_m{
+            width: 600px
+        }
+        @include __mobile_l{
+            width: 480px
+        }
+        @include __mobile_m{
+            width: 350px
+        }
+        @include __mobile_s{
+            width: 280px
+        }
+
     }
 }
-
+button.close__btn {
+    align-items: center;
+    float: right;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    right: -370px;
+    top: -195px;
+    transition: 0.4s all;
+    @include __tablet_l{
+        right: -360px;
+        top: -195px;
+        transition: 0.4s all;
+    }
+    @include __tablet_m{
+        right: -275px;
+        top: -195px;
+        transition: 0.4s all;
+    }
+    @include __mobile_l{
+        right: -215px;
+        top: -195px;
+        transition: 0.4s all;
+    }
+    @include __mobile_m{
+        right: -150px;
+        top: -195px;
+        transition: 0.4s all;
+    }
+    @include __mobile_s{
+        right: -115px;
+        top: -195px;
+        transition: 0.4s all;
+    }
+}
 progress {
 	&::-webkit-progress-bar {
 		background-color: #e3e3e3;
@@ -143,4 +296,23 @@ progress {
 		background-color: #add136;
 		border-radius: 7px;
 	}
+}
+
+.new{
+    position: absolute;
+    clip-path: polygon(100% 0, 50% 50%, 0% 100%, 0 0);
+    height: 80px;
+    width: 80px;
+    background: #bfdb62;
+    color: #fff;
+    margin-right: auto;
+    margin-left: 0; 
+    border-top-left-radius: 9px;
+    & p {
+        position: absolute;
+        left: 3px;
+        top: -5px;
+        transform: rotate(-45deg);
+        font-size: 2.2rem;
+    }
 }

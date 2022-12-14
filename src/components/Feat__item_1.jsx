@@ -6,7 +6,8 @@ function Feat__item_1 (props) {
      const Popup = () => setButtonPopup(true);
     return (
         <><div className="feat__item" onClick={Popup}>
-            <div className="feat__item-img"><img src={feat_1} alt="" srcSet="" /><button>From GBP  3600</button></div>
+            <div className="feat__item-img"><div className="new"><p>NEW</p></div><img src={feat_1} alt="" srcSet="" /></div>
+            <button>From GBP  3600</button> 
             <div className="feat__item-description">
                 <div className="feat__description-title">Ontario Tower , LONDON</div>
                 <div className="feat__description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
@@ -17,7 +18,10 @@ function Feat__item_1 (props) {
                         <div className="feat__remaining-time">8 Days Left</div>
                     </div>
                 </div>
-                <div className="feat__details">See Project Details</div>
+                <div className="feat__details">
+                    <div className="feat__details_name">See Project Details</div>
+                    <div className="arrow"></div>
+                </div>
             </div>
             </div>
             <Feat__popup trigger={buttonPopup} setTrigger=

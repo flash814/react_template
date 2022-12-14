@@ -101,7 +101,9 @@
 			text-align: center;
 			padding-bottom: 46px;
 			cursor: pointer;
-			
+			margin-top: 15px;
+			border-bottom: 1px solid #e6e6e6;
+
 			@include __tablet_l{
 				font-size: 3rem;
 				padding-bottom: 20px;
@@ -123,7 +125,17 @@
 				padding-bottom: 20px;
 			}
 			&::before {
-				content: url(../img/Ellipse.png);
+				counter-increment: presCounter;
+  				content:counter(presCounter);
+  				color: white;
+  				background: #add136;
+  				display: inline-block;
+  				text-align: center;
+  				margin: 5px 10px;
+ 				line-height: 40px;
+				border-radius: 50%;
+  				width: 40px;
+  				height: 40px;
 				align-items: center;
 				margin: 0;
 				left: 0px;
@@ -190,5 +202,19 @@
 	}
 	&__3 {
 		background-color: #848484;
+	}
+}
+li.pres__name_title {
+	&::before {
+		margin-right: 33px;
+		@include __mobile_l{
+			margin-right: 15px;
+		}
+		@include __mobile_m{
+			margin-right: 15px;
+		}
+		@include __mobile_s{
+			margin-right: 15px;
+		}
 	}
 }

@@ -5,18 +5,22 @@ function Feat__item_2 () {
     const [buttonPopup, setButtonPopup] = useState(false);
     return (
         <><div className="feat__item" onClick={() => setButtonPopup(true)}>
-            <div className="feat__item-img"><img src={feat_2} alt="" srcSet="" /><button>From GBP  3600</button></div>
+            <div className="feat__item-img"><div className="new"><p>NEW</p></div><img src={feat_2} alt="" srcSet="" /></div>
+            <button>From GBP  3600</button>
             <div className="feat__item-description">
                 <div className="feat__description-title">Ontario Tower , LONDON</div>
                 <div className="feat__description-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                    <div className="feat__description-complete">
-                        <div className="feat__complete"><progress value="60" max="100"></progress></div>
-                        <div className="feat__remaining">
-                            <div className="feat__complete-percent">60% Funded</div>
-                            <div className="feat__remaining-time">8 Days Left</div>
-                        </div>
+                <div className="feat__description-complete">
+                    <div className="feat__complete"><progress value="60" max="100"></progress></div>
+                    <div className="feat__remaining">
+                        <div className="feat__complete-percent">60% Funded</div>
+                        <div className="feat__remaining-time">8 Days Left</div>
                     </div>
-                <div className="feat__details">See Project Details</div>
+                </div>
+                <div className="feat__details">
+                    <div className="feat__details_name">See Project Details</div>
+                    <div className="arrow"></div>
+                </div>
             </div>
         </div>
         <Feat__popup trigger={buttonPopup} setTrigger=

@@ -1,6 +1,9 @@
 .find {
-	display:none;
+	display: flex;
 	justify-content: center;
+	@include __tablet_m{
+		display: block ;
+	}
 	&__title {
 		padding-top: 46px;
 		padding-bottom: 39px;
@@ -20,6 +23,21 @@
 		padding-right: 47px;
 		padding-left: 78px;
 		padding-top: 96px;
+		@include __tablet_l{
+			padding-left: 30px;
+		}
+		@include __tablet_m{
+			padding-left: 30px;
+		}
+		@include __mobile_l{
+			padding-left: 30px;
+		}
+		@include __mobile_m{
+			padding-left: 30px;
+		}
+		@include __mobile_s{
+			padding-left: 30px;
+		}
 	}
 	&__item{
 		&-btn {
@@ -41,10 +59,34 @@
 		&-left {
 			background: #e2f8ff;
 			width: 50%;
+			@include __tablet_m{
+				width: 100%;
+			}
+			@include __mobile_l{
+				width: 100%;
+			}
+			@include __mobile_m{
+				width: 100%;
+			}
+			@include __mobile_s{
+				width: 100%;
+			}
 		}
 		&-right {
 			background: #f5f9eb;
 			width: 50%;
+			@include __tablet_m{
+				width: 100%;
+			}
+			@include __mobile_l{
+				width: 100%;
+			}
+			@include __mobile_m{
+				width: 100%;
+			}
+			@include __mobile_s{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -52,12 +94,36 @@
 .buyers {
 	display: flex;
 	justify-content: left;
+	@include __tablet_m{
+		justify-content: center;
+	}
+	@include __mobile_l{
+		justify-content: center;
+	}
+	@include __mobile_m{
+		justify-content: center;
+	}
+	@include __mobile_s{
+		justify-content: center;
+	}	
 }
 
 .properties {
 	background: #e2f8ff;
 	display: flex;
 	justify-content: right;
+	@include __tablet_m{
+		justify-content: center;
+	}
+	@include __mobile_l{
+		justify-content: center;
+	}
+	@include __mobile_m{
+		justify-content: center;
+	}
+	@include __mobile_s{
+		justify-content: center;
+	}
 }
 
 #find__btn {

@@ -61,7 +61,7 @@ const Presentation = function() {
         <p className="semi">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p></div>
         <div className="pres__slider">
             <div className="pres__name">
-                <ol>
+            <ol>
                 <li className="pres__name_title active__button" id="pres__title-1">Simple </li>
                 <li className="pres__name_title" id="pres__title-2">Transparent</li>
                 <li className="pres__name_title" id="pres__title-3">Collaborative</li>
