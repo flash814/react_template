@@ -2,111 +2,54 @@ import React, { Children, children, cloneElement, useEffect, useState, useContex
 import left from '../img/left.png'
 import right from '../img/right.png'
 import $ from 'jquery';  
-
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
 
 const Register_slider  = function({children, infinite}) {
-    
-    const [pages, setPages] = useState ([])
-    const [offset, setOffset] = useState(0)
-    const [size, setSize] = useState({
-        x: window.innerWidth,
-        y: window.innerHeight
-      });
-      const updateSize = () =>
-        setSize({
-          x: window.innerWidth,
-          y: window.innerHeight
-        });
-      useEffect(() => (window.onresize = updateSize), []);
-    const [width, setWidth] = useState(size.x)
-
-    
-    useEffect(() => {
-        setPages(
-            Children.map(children, (child) => {
-                return cloneElement(child, {
-                    style: {
-                    height:'100%',
-                    minWidth: `${width}px`,
-                    maxWidth: `${width}px`
-                    }
-                })
-            })
-        )
-    }, []);
-    const handleLeftClick = () => {
-        setOffset((currentOffset) => {
-            const newOffset = currentOffset + width
-            
-            console.log(newOffset)
-            return Math.min(newOffset, 0)
-        })
-    }
-    const handleRightClick = () => {
-        
-
-        setOffset((currentOffset) => {
-            const newOffset = currentOffset - width
-
-            const maxOffset = -2048
-            
-            console.log(newOffset)
-            return Math.max(newOffset, maxOffset)
-        })
-    }
-    
-   
-    
-
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+      };
     return (
     <><div className="reg">
         <div className="container">
-        <div className="window">
-        <div className="reg__slider"
-            style={{
-                transform: `translateX(${offset}px)`
-            }}
-        >
-            <div className="slider__item_1 ">
-            
-                <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana.</span>
-                </div>
-                <div className="reg__pos">
-                    <button className="reg__btn btn">Become a member</button>
-                    
-                </div>
-            
-            </div>
-            
-       <div className=" slider__item_2"> 
-            
-                <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana.</span>
-                </div>  
-                <div className="reg__pos">
-                    <button className="reg__btn btn">Become a member</button>
-                    
-                </div>
-            
-        </div>
-            <div className=" slider__item_3">
-                <div className="reg__title">Intellectual Property has the Shelf Life
-                    <span> of a Banana.</span>
-                </div>
-                <div className="reg__pos">
-                    <button className="reg__btn btn">Become a member</button>
-                    
-                </div>
-                </div>
-                </div>
-        </div><div className="reg__slider_btn">
-                        <a className="left__arrow" onClick={handleLeftClick}><img src={left} alt="" srcSet="" /></a>
-                        <a className="right__arrow" onClick={handleRightClick} ><img src={right} alt="" /></a>
+            <div className="window">
+                <Slider {...settings}>
+                <div className="slider_items">
+                    <div className="slider__item ">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>
+                    </div>  
+                    <div className=" slider__item">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>  
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>
                     </div>
-    </div>
-    {pages}</div></>
+                    <div className=" slider__item">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>
+                    </div>
+                </div>
+            </Slider>
+            </div>
+        </div>
+    </div></>
 
      )
     };

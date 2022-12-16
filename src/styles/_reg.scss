@@ -182,7 +182,9 @@
     overflow: hidden;
     
 }
-
+.reg .slider__item{
+	display: grid;
+}
 .slider__item_{
     &1{
         min-width: 1024px;
