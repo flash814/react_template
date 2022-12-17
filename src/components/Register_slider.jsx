@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Register_slider  = function({children, infinite}) {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -20,14 +20,14 @@ const Register_slider  = function({children, infinite}) {
         <div className="container">
             <div className="window">
                 <Slider {...settings}>
-                <div className="slider_items">
-                    <div className="slider__item ">
+                    <div className="slider__item">
                         <div className="reg__title">Intellectual Property has the Shelf Life
                             <span> of a Banana.</span>
                         </div>
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
                         </div>
+                        
                     </div>  
                     <div className=" slider__item">
                         <div className="reg__title">Intellectual Property has the Shelf Life
@@ -36,6 +36,7 @@ const Register_slider  = function({children, infinite}) {
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
                         </div>
+                        
                     </div>
                     <div className=" slider__item">
                         <div className="reg__title">Intellectual Property has the Shelf Life
@@ -44,8 +45,9 @@ const Register_slider  = function({children, infinite}) {
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
                         </div>
+                        
                     </div>
-                </div>
+
             </Slider>
             </div>
         </div>
