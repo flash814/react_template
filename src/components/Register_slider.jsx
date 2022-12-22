@@ -13,8 +13,18 @@ const Register_slider  = function({children, infinite}) {
         infinite: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,  
+
       };
+      var slider = $('.slick-slider');
+
+      $('.slider_arrows .slick-prev').on('click', function() {
+        $(slider).slick('slickPrev');
+      });
+      $('.slider_arrows .slick-next').on('click', function() {
+        $(slider).slick('slickNext');
+      });
+    
     return (
     <><div className="reg">
         <div className="container">
@@ -26,8 +36,7 @@ const Register_slider  = function({children, infinite}) {
                         </div>
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
-                        </div>
-                        
+                        </div>                       
                     </div>  
                     <div className=" slider__item">
                         <div className="reg__title">Intellectual Property has the Shelf Life
@@ -35,8 +44,7 @@ const Register_slider  = function({children, infinite}) {
                         </div>  
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
-                        </div>
-                        
+                        </div>                        
                     </div>
                     <div className=" slider__item">
                         <div className="reg__title">Intellectual Property has the Shelf Life
@@ -44,11 +52,17 @@ const Register_slider  = function({children, infinite}) {
                         </div>
                         <div className="reg__pos">
                             <button className="reg__btn btn">Become a member</button>
-                        </div>
-                        
-                    </div>
-
+                        </div>                        
+                    </div>                  
             </Slider>
+                <div className="slider__arrows">
+                    <div className="prev">
+                        <button type = "button" class = "slick_arrow slick-prev"> Предыдущая </ button>
+                    </div>
+                    <div className="next">
+                        <button type = "button" class = "slick_arrow slick-next"> Next </ button>
+                    </div>
+                </div>
             </div>
         </div>
     </div></>
