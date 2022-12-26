@@ -3,9 +3,10 @@ import left from '../img/left.png'
 import right from '../img/right.png'
 import $ from 'jquery';  
 import Slider from "react-slick";
+import Feat__item_1 from "./slideArrows";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-
+import NextButton from "./NextButton";
 
 const Register_slider  = function({children, infinite}) {
     const settings = {
@@ -14,16 +15,10 @@ const Register_slider  = function({children, infinite}) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,  
-
+        
+        prevArrow: <Feat__item_1/>,
+        nextArrow: <NextButton/>
       };
-      var slider = $('.slick-slider');
-
-      $('.slider_arrows .slick-prev').on('click', function() {
-        $(slider).slick('slickPrev');
-      });
-      $('.slider_arrows .slick-next').on('click', function() {
-        $(slider).slick('slickNext');
-      });
     
     return (
     <><div className="reg">
@@ -56,15 +51,11 @@ const Register_slider  = function({children, infinite}) {
                     </div>                  
             </Slider>
                 <div className="slider__arrows">
-                    <div className="prev">
-                        <button type = "button" class = "slick_arrow slick-prev"> Предыдущая </ button>
-                    </div>
-                    <div className="next">
-                        <button type = "button" class = "slick_arrow slick-next"> Next </ button>
-                    </div>
+                    <Feat__item_1/>
+                    <NextButton/>
                 </div>
             </div>
-        </div>
+        </div>  
     </div></>
 
      )
