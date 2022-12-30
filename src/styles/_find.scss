@@ -10,6 +10,15 @@
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 400;
 		font-size: 2.3rem;
+		@include __mobile_l{
+			text-align: center;
+		}
+		@include __mobile_m{
+			text-align: center;
+		}
+		@include __mobile_s{
+			text-align: center;
+		}	
 	}
 	&__text {
 		font-family: 'Open Sans ', sans-serif;
@@ -17,9 +26,23 @@
 		font-size: 1.7rem;
 		padding-bottom: 31px;
 		max-width: 257px;
+		@include __mobile_l{
+			text-align: center;
+			max-width: 100%;
+			padding: 0px 50px 40px;
+		}
+		@include __mobile_m{
+			text-align: center;
+			max-width: 100%;
+			padding: 0px 50px 40px;
+		}
+		@include __mobile_s{
+			text-align: center;
+			max-width: 100%;
+			padding: 0px 50px 40px;
+		}	
 	}
 	&__img {
-		padding-right: 47px;
 		padding-right: 47px;
 		padding-left: 78px;
 		padding-top: 96px;
@@ -30,18 +53,48 @@
 			padding-left: 30px;
 		}
 		@include __mobile_l{
-			padding-left: 30px;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		@include __mobile_m{
-			padding-left: 30px;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
 		}
 		@include __mobile_s{
-			padding-left: 30px;
+			text-align: center;
+			padding-left: 0;
+			padding-right: 0;
 		}
 	}
 	&__item{
+		&-left{
+			@include __mobile_l{
+				display: block;
+				justify-content: center;
+			}
+			@include __mobile_m{
+				display: block;				
+				justify-content: center;
+			}
+			@include __mobile_s{
+				display: block;				
+				justify-content: center;
+			}	
+		}
+
 		&-btn {
 			padding-bottom: 47px;
+			@include __mobile_l{
+				text-align: center;
+			}
+			@include __mobile_m{
+				text-align: center;
+			}
+			@include __mobile_s{
+				text-align: center;
+			}	
 		}
 	}
 	&__btn {
@@ -95,15 +148,19 @@
 	display: flex;
 	justify-content: left;
 	@include __tablet_m{
+		
 		justify-content: center;
 	}
 	@include __mobile_l{
+		display: block;
 		justify-content: center;
 	}
 	@include __mobile_m{
+		display: block;
 		justify-content: center;
 	}
 	@include __mobile_s{
+		display: block;
 		justify-content: center;
 	}	
 }
@@ -116,12 +173,18 @@
 		justify-content: center;
 	}
 	@include __mobile_l{
+		display: block;
+		margin: 0 auto;
 		justify-content: center;
 	}
 	@include __mobile_m{
+		display: block;
+		margin: 0 auto;
 		justify-content: center;
 	}
 	@include __mobile_s{
+		display: block;
+		margin: 0 auto;
 		justify-content: center;
 	}
 }

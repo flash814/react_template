@@ -1,5 +1,4 @@
 import React from "react";
-import $ from "jquery"
 import glasses from '/OpenServer/domains/react_template/src/img/glasses.png'
 
 const Slider = function() {

@@ -25,6 +25,21 @@
 			font-size: 3.9rem;
 			color: #9ec02d;
 			padding-bottom: 51px;
+			@include __tablet_l{
+				font-size: 3.2rem;
+			}
+			@include __tablet_m{
+				font-size: 3rem;
+			}
+			@include __mobile_l{
+				font-size: 2.5rem;
+			}
+			@include __mobile_m{
+				font-size: 2rem;
+			}
+			@include __mobile_s{
+				font-size: 2rem;
+			}
 		}
 		&-text {
 			font-family: 'Open Sans ', sans-serif;
@@ -32,6 +47,27 @@
 			font-size: 1.9rem;
 			color: #949494;
 			padding-bottom: 103px;
+			@include __tablet_l{
+				font-size: 1.8rem;
+				padding-bottom: 40px;
+			}
+			@include __tablet_m{
+				padding-bottom: 10px;
+				font-size: 1.7rem;
+			}
+			@include __mobile_l{
+				padding-bottom: 10px;
+				font-size: 1.4rem;
+			}
+			@include __mobile_m{
+				padding-bottom: 10px;
+				font-size: 1.4rem;
+			}
+			@include __mobile_s{
+				padding-bottom: 10px;
+				font-size: 1.4rem;
+			}
+			
 		}
 		&-items {
 			display: flex;
@@ -51,11 +87,20 @@
 			max-width: 396px;
 			padding: 36px 25px 42px;
 			
+			@include __mobile_l{
+				margin: 0 auto;
+			}
+			@include __mobile_m{
+				margin: 0 auto;
+			}
+			@include __mobile_s{
+				margin: 0 auto;
+			}	
 		}
 	}
 	&__item{
 		&-border{
-			background-color: #fff;
+			background-color: #DDD;
 			padding-left: 35px;
 			padding-right: 43px;
 			border-radius: 15px;
@@ -79,11 +124,20 @@
 		&-name {
 			display: flex;
 			margin-left: 50px;
+			@include __mobile_l{
+				margin: 0 50px;
+			}
+			@include __mobile_m{
+				margin: 0 50px;
+			}
+			@include __mobile_s{
+				margin: 0 50px;
+			}	
 		}
 		&-border-buttom {
 			width: 0;
 			height: 0;
-			border-top: 23px solid #fff;
+			border-top: 23px solid #DDD;
 			border-right: 23px solid transparent;
 			margin-left: 84px;
 			margin-bottom: 60px;

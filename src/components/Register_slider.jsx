@@ -1,13 +1,31 @@
-import React, { Children, children, cloneElement, useEffect, useState, useContext } from "react";
+import React from "react";
 import left from '../img/left.png'
 import right from '../img/right.png'
-import $ from 'jquery';  
 import Slider from "react-slick";
-import Feat__item_1 from "./slideArrows";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import NextButton from "./NextButton";
 
+
+function PrevArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, position:"absolute", display: "block", right: 25, }}
+        onClick={onClick}
+      ><img src={left} alt="" srcSet="" /></div>
+    );
+  }
+function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, position:"absolute", display: "block", }}
+        onClick={onClick} 
+      ><img src={right} alt="" srcSet="" /></div>
+    );
+  }
 const Register_slider  = function({children, infinite}) {
     const settings = {
         dots: false,
@@ -15,9 +33,34 @@ const Register_slider  = function({children, infinite}) {
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,  
-        
-        prevArrow: <Feat__item_1/>,
-        nextArrow: <NextButton/>
+        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow/>,
+        responsive: [
+            {
+              breakpoint: 979,
+              settings: {
+
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+
+              }
+            },
+            {
+              breakpoint: 350,
+              settings: {
+  
+              }
+            },
+          ]
       };
     
     return (
@@ -50,10 +93,6 @@ const Register_slider  = function({children, infinite}) {
                         </div>                        
                     </div>                  
             </Slider>
-                <div className="slider__arrows">
-                    <Feat__item_1/>
-                    <NextButton/>
-                </div>
             </div>
         </div>  
     </div></>

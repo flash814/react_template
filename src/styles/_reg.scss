@@ -96,7 +96,7 @@
 	&__title {
 		padding-top: 208px;
 		padding-bottom: 60px;
-		font-size: 49px;
+		font-size: 4.9rem;
 		font-weight: 600;
 		color: #fff;
 			@include __tablet_l{
@@ -187,7 +187,7 @@
 }
 
 .slick{
-	&-next{
+	&-prev{
 		left: 0px;
 		right: 0px;
 		position: absolute;
@@ -202,4 +202,6 @@
 	}
 }
 
-
+.angle-left{
+	
+}
