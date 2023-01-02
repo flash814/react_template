@@ -1,26 +1,103 @@
 import React from "react";
 import left from '../img/left.png'
 import right from '../img/right.png'
-const Register = function() {
-    
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 
+
+function PrevArrow(props) {
+    const { className, style, onClick } = props;
     return (
+      <div
+        className={className}
+        style={{ ...style, position:"absolute", display: "block", right: 25, }}
+        onClick={onClick}
+      ><img src={left} alt="" srcSet="" /></div>
+    );
+  }
+function NextArrow(props) {
+    const { className, style, onClick } = props;
+    return (
+      <div
+        className={className}
+        style={{ ...style, position:"absolute", display: "block", }}
+        onClick={onClick} 
+      ><img src={right} alt="" srcSet="" /></div>
+    );
+  }
+const Register_slider  = function({children, infinite}) {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,  
+        prevArrow: <PrevArrow/>,
+        nextArrow: <NextArrow/>,
+        responsive: [
+            {
+              breakpoint: 979,
+              settings: {
 
-<div className="register">
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+
+              }
+            },
+            {
+              breakpoint: 350,
+              settings: {
+  
+              }
+            },
+          ]
+      };
+    
+    return (
+    <><div className="reg">
         <div className="container">
-            <div className="reg__title">Intellectual Property has the Shelf Life 
-                <span> of a Banana</span>.
+            <div className="window">
+                <Slider {...settings}>
+                    <div className="slider__item">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>                       
+                    </div>  
+                    <div className=" slider__item">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>  
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>                        
+                    </div>
+                    <div className=" slider__item">
+                        <div className="reg__title">Intellectual Property has the Shelf Life
+                            <span> of a Banana.</span>
+                        </div>
+                        <div className="reg__pos">
+                            <button className="reg__btn btn">Become a member</button>
+                        </div>                        
+                    </div>                  
+            </Slider>
             </div>
-            <div className="reg__pos">
-                <button className="reg__btn btn">Become a member</button>
-                <div className="reg__slider_btn">
-                    <a className="left__btn"><img src={left} alt="" srcSet="" /></a>
-                    <a className="right__btn"><img src={right} alt="" /></a>
-                </div>
-            </div>         
-        </div>    
-    </div>
+        </div>  
+    </div></>
+
      )
     };
     
-    export default Register;
+    export default Register_slider

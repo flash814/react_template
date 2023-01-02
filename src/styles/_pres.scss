@@ -157,6 +157,15 @@
 .slider{
 	&__img {
 		padding-top: 87px;
+		
+		@include __mobile_m{
+			padding-top: 40px;
+			
+		}
+		@include __mobile_s{
+			padding-top: 40px;
+			
+		}	
 	}
 	&__title {
 		font-family: 'Open Sans ', sans-serif;
@@ -178,10 +187,36 @@
 		&-left {
 			width: 100%;
 			max-width: 33%;
+			@include __mobile_m{
+				text-align: center;
+				max-width: 100%;
+				
+			}
+			@include __mobile_s{
+				text-align: center;
+				max-width: 100%;
+				
+			}	
 		}
 		&-right {
 			width: 100%;
 			max-width: 66%;
+			padding: 10px;
+			@include __mobile_l{
+				text-align: center;
+				max-width: 100%;
+			
+			}
+			@include __mobile_m{
+				text-align: center;
+				max-width: 100%;
+				
+			}
+			@include __mobile_s{
+				text-align: center;
+				max-width: 100%;
+				
+			}	
 		}
 	}
 }

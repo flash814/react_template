@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
 import feat_2 from '../img/feat_2.png'
-import Feat__popup from "./popup__items/feat__popup";
+import FEAT__POPUP from "./popup__items/FEAT__POPUP";
 function Feat__item_2 () {
     const [buttonPopup, setButtonPopup] = useState(false);
     return (
@@ -23,7 +23,7 @@ function Feat__item_2 () {
                 </div>
             </div>
         </div>
-        <Feat__popup trigger={buttonPopup} setTrigger=
+        <FEAT__POPUP trigger={buttonPopup} setTrigger=
         {setButtonPopup}>
             <div className="feat__popup">
                 <div className="feat__content">
@@ -47,7 +47,7 @@ function Feat__item_2 () {
                     </div>
                 </div>
             </div>
-        </Feat__popup>                
+        </FEAT__POPUP>                
     </>
         );
     }

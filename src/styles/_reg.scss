@@ -187,7 +187,11 @@
 }
 
 .slick{
+	&-arrow{
+		
+	}
 	&-prev{
+		margin: 0 0 0 auto;
 		left: 0px;
 		right: 0px;
 		position: absolute;

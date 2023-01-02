@@ -41,6 +41,7 @@
             color: #515151;
             padding-top: 81px;
             padding-bottom: 33px;
+            
         }
         &-text {
             font-family: 'Open Sans ', sans-serif;
@@ -50,6 +51,15 @@
             padding-bottom: 70px;
             max-width: 100%;
             padding-right: 129px;
+            @include __mobile_l{
+                padding-right: 50px;
+            }
+            @include __mobile_m{
+                padding-right: 20px;
+            }
+            @include __mobile_s{
+                padding-right: 10px;
+            }
         }
         &-btn {
             @include __mobile_m{
@@ -316,4 +326,67 @@ progress {
         transform: rotate(-45deg);
         font-size: 2.2rem;
     }
+}
+
+.feat__content{
+    .popup{
+        &__img{
+            & img{
+                @include __tablet_l{
+                    max-width: 250px;
+                    transition: 0,4s all;
+                }
+               @include __tablet_m{
+                    max-width: 225px;
+               }
+            }
+        }
+        
+        &__title.feat__description-title{
+            @include __tablet_l{
+                font-size: 2.4rem;
+                
+            }
+        }
+        &__text.feat__description-text{
+            @include __tablet_l{
+                font-size: 1.7rem;
+            }
+            
+        }
+    }
+}
+.popup{
+    &__img{
+        & img{
+            @include __tablet_l{
+                max-width: 250px;
+                transition: 0,4s all;
+            }
+        }
+        
+    }
+    .feat__description-title
+    &__title{
+        @include __tablet_l{
+            font-size: 2.4rem;
+            
+        }
+    }
+    &__text{
+
+    }
+    &__price{
+
+    }
+    &__complete{
+
+    }
+    &__percent{
+
+    }
+    &__time{
+
+    }
+
 }
