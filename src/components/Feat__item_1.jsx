@@ -35,7 +35,7 @@ function Feat__item_1 (props) {
                         <div className="feat__item-description">
                             <div className="feat__description-title popup__title">Ontario Tower , LONDON</div>
                             <div className="feat__description-text popup__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
-                            <button className="btn__price  popup__price">From GBP  3600</button>
+                            
                             <div className="feat__description-complete popup__complete">
                                 <div className="feat__complete">
                                     <progress value="10" max="100"></progress>
@@ -44,6 +44,7 @@ function Feat__item_1 (props) {
                                     <div className="feat__complete-percent  popup__percent">10% Funded</div>
                                     <div className="feat__remaining-time popup__time">8 Days Left</div>
                                 </div>
+                                <button className="btn__price  popup__price">From GBP  3600</button>
                             </div>
                         </div>
                     </div>

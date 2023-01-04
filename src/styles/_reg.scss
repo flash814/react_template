@@ -187,9 +187,7 @@
 }
 
 .slick{
-	&-arrow{
-		
-	}
+	
 	&-prev{
 		margin: 0 0 0 auto;
 		left: 0px;
@@ -197,15 +195,77 @@
 		position: absolute;
 		margin-right: 0;
 		margin-left: auto;
+		@include __tablet_l{
+			
+		}
+		@include __tablet_m{
+
+		}
+		@include __mobile_l{
+
+		}
+		@include __mobile_m{
+			
+		}
+		@include __mobile_s{
+			
+		}
 	}
 	&-next{
 		left: 0px;
 		position: absolute;
 		margin-right: 0;
 		margin-left: auto;
+		@include __tablet_l{
+			right: 50px;
+		}
+		@include __tablet_m{
+
+		}
+		@include __mobile_l{
+
+		}
+		@include __mobile_m{
+			
+		}
+		@include __mobile_s{
+			
+		}
 	}
 }
 
-.angle-left{
-	
+
+[dir='rtl'] .slick{
+	&-prev{
+		right: 0px;
+    	left: auto;
+		&:before{
+			content: '';
+		}
+	}
+	&-next{
+		right: auto;
+		left: 0px;
+		&:before{
+			content: '';
+		}
+	}
+}
+
+.slick{
+	&-prev{
+		left: 0px;
+		&:before
+		{
+			content: '';
+		}
+	}
+	&-next
+	{
+		right: 0px; 
+		&:before
+		{
+			content: '';
+		}
+	}
 }
