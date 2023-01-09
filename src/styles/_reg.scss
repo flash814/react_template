@@ -235,15 +235,15 @@
 }
 
 
-[dir='rtl'] .slick{
-	&-prev{
+[dir='rtl'] .arrow{
+	&_prev{
 		right: 0px;
     	left: auto;
 		&:before{
 			content: '';
 		}
 	}
-	&-next{
+	&_next{
 		right: auto;
 		left: 0px;
 		&:before{
@@ -251,21 +251,99 @@
 		}
 	}
 }
-
-.slick{
-	&-prev{
-		left: 0px;
+.slider{
+	&__item{
+		margin-bottom: 20px;
+	}
+}
+.arrow{
+	&_prev{
+		right: 25px;
+		@include __tablet_l{
+			right: 125px;
+		}
+		@include __tablet_m{
+			right: 100px;
+		}
+		@include __mobile_l{
+			right: 75px;
+		}
+		@include __mobile_m{
+			right: 75px;
+		}
+		@include __mobile_s{
+			right: 50px;
+		}
 		&:before
 		{
 			content: '';
 		}
 	}
-	&-next
+	&_next
 	{
 		right: 0px; 
+		@include __tablet_l{
+			right: 100px;
+		}
+		@include __tablet_m{
+			right: 75px;
+		}
+		@include __mobile_l{
+			right: 50px;
+		}
+		@include __mobile_m{
+			right: 50px;
+		}
+		@include __mobile_s{
+			right: 25px;
+		}
 		&:before
 		{
 			content: '';
 		}
 	}
+}
+
+.arrow_next,
+.arrow_prev{
+	font-size: 0;
+    line-height: 0;
+    position: relative;
+    bottom: -50px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+
+
+.arrow_prev:hover,
+.arrow_prev:focus,
+.arrow_next:hover,
+.arrow_next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.arrow_prev:hover:before,
+.arrow_prev:focus:before,
+.arrow_next:hover:before,
+.arrow_next:focus:before
+{
+    opacity: 1;
+}
+.arrow_prev.slick-disabled:before,
+.arrow_next.slick-disabled:before
+{
+    opacity: .25;
 }

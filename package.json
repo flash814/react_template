@@ -18,6 +18,7 @@
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4",
+    "wordpress": "^1.4.1",
     "yarn": "^1.22.19"
   },
   "scripts": {
@@ -43,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@wordpress/scripts": "^25.1.0"
   }
 }

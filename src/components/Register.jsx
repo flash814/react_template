@@ -7,20 +7,20 @@ import "slick-carousel/slick/slick-theme.css";
 
 
 function PrevArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
       <div
-        className={className}
-        style={{ ...style, position:"absolute", display: "block", right: 25, }}
+        className="arrow_prev"
+        style={{ ...style, position:"absolute", display: "block", }}
         onClick={onClick}
       ><img src={left} alt="" srcSet="" /></div>
     );
   }
 function NextArrow(props) {
-    const { className, style, onClick } = props;
+    const { style, onClick } = props;
     return (
       <div
-        className={className}
+        className="arrow_next"
         style={{ ...style, position:"absolute", display: "block", }}
         onClick={onClick} 
       ><img src={right} alt="" srcSet="" /></div>
