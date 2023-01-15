@@ -1,7 +1,7 @@
 {
   "name": "react_template",
   "version": "0.1.0",
-  "homepage": "/react_template",
+  "homepage": "https://react-template-u1y3-flash814.vercel.app",
   "private": true,
   "dependencies": {
     "@babel/plugin-syntax-class-properties": "^7.12.13",
