@@ -1,7 +1,7 @@
 {
   "name": "react_template",
   "version": "0.1.0",
-  "homepage": "https://flash814.github.io/react_template",
+  "homepage": "/react_template",
   "private": true,
   "dependencies": {
     "@babel/plugin-syntax-class-properties": "^7.12.13",
