@@ -6,7 +6,7 @@ import Presentation from "./components/Presentation"
 import Find from "./components/Find";
 import Footer from "./components/Footer";
 import Feat from "./components/Feat";
-import FEAT__POPUP from "./components/popup__items/FEAT__POPUP";
+import FEAT__POPUP from "./components/FEAT__POPUP";
 import Part from "./components/Part";
 
 function App() {

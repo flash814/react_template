@@ -1,7 +1,7 @@
 {
   "name": "react_template",
   "version": "0.1.0",
-  "homepage": "https://flash814.github.io/react_template",
+  "homepage": "https://react-template-u1y3-flash814.vercel.app",
   "private": true,
   "dependencies": {
     "@babel/plugin-syntax-class-properties": "^7.12.13",
@@ -23,8 +23,9 @@
     "yarn": "^1.22.19"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"react_template -d build",
+    "predeploy": "npm run build",
+    "deploy": "react_template -d build",
+
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,6 +51,7 @@
   },
   "devDependencies": {
     "@wordpress/scripts": "^25.1.0",
+    "eslint": "^8.31.0",
     "gh-pages": "^4.0.0"
   }
 }

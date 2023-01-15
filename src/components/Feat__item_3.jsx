@@ -1,6 +1,6 @@
 import React, { useState } from "react"; 
 import feat_3 from '../img/feat_3.png';
-import FEAT__POPUP from "./popup__items/FEAT__POPUP";
+import FEAT__POPUP from "./FEAT__POPUP";
 function Feat__item_3 () {
     const [buttonPopup, setButtonPopup] = useState(false);
     return (

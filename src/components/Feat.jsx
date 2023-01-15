@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import Feat__item_1 from "./Feat__item_1";
 import Feat__item_2 from "./Feat__item_2";

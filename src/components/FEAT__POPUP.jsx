@@ -1,6 +1,6 @@
 
 import React from "react";
-import {} from '../popup__items/FEAT__POPUP.scss'
+import {} from '../components/FEAT__POPUP.scss'
 
 
 
