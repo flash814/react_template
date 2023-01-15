@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import $ from 'jquery';
 
@@ -15,17 +16,17 @@ const Header = function() {
       
     <header className="header">
         <div className="container">
-            <div className="header__logo"><a href="#">Crowdme</a></div>
+            <div className="header__logo"><a href="https://react-template-u1y3-flash814.vercel.app">Crowdme</a></div>
             <div className="navbar__burger">
                 <span></span>
             </div>
             <nav className="navbar">   
                 <ul className="navbar__menu">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">how it works</a></li>
-                    <li><a href="#">discover a project</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">find out more</a></li>
+                    <li><a eslint-disable-next-line href="https://react-template-u1y3-flash814.vercel.app">home</a></li>
+                    <li><a eslint-disable-next-line href="https://react-template-u1y3-flash814.vercel.app">how it works</a></li>
+                    <li><a eslint-disable-next-line href="https://react-template-u1y3-flash814.vercel.app">discover a project</a></li>
+                    <li><a eslint-disable-next-line href="https://react-template-u1y3-flash814.vercel.app">blog</a></li>
+                    <li><a eslint-disable-next-line href="https://react-template-u1y3-flash814.vercel.app">find out more</a></li>
                     <li><button className="navbar__btn btn">login</button></li>
                 </ul>      
             </nav>
