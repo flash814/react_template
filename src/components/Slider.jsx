@@ -1,5 +1,5 @@
 import React from "react";
-import glasses from '/OpenServer/domains/react_template/src/img/glasses.png'
+import glasses from '/OpenServer/domains/new/src/img/glasses.png'
 
 const Slider = function() {
     
